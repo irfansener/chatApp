@@ -1,0 +1,24 @@
+{
+  "name": "irfan",
+  "version": "0.0.1",
+  "description": "Use the home person live chat app and save all history.",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/irfansener/chatApp.git"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/irfansener/chatApp/issues"
+  },
+  "homepage": "https://github.com/irfansener/chatApp#readme",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "irfan",
+  "license": "ISC"
+}
