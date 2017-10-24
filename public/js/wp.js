@@ -4,7 +4,6 @@ var deviceTime = document.querySelector('.status-bar .time');
 var messageTime = document.querySelectorAll('.message .time');
 
 /* Message */
-var messageTo = "deneme";
 var form = document.querySelector('.conversation-compose');
 var conversation = document.querySelector('.conversation-container');
 
@@ -12,6 +11,7 @@ form.addEventListener('submit', newMessage);
 
 function newMessage(e) {
 	var input = e.target.input;
+    var messageTo = $('#userName').text();
     socket.emit('chat message', {"message": input.value, "from": getCookie("username"), "to": messageTo});  
 
 	input.value = '';

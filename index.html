@@ -19,7 +19,7 @@
       <div class="chat">
         <div class="chat-container">
           <div class="user-bar">
-            <div class="back">
+            <div class="back" onclick="contactList()" style="cursor: pointer;">
               <i class="zmdi zmdi-arrow-left"></i>
             </div>
             <div class="avatar">
@@ -69,12 +69,12 @@
     <script>
       $(function () {
         var socket = io();
-	       	if(getCookie("username")==""){
-	       	var username = prompt("Please write a username");
-	        if(username.length!==0)
-	          document.cookie = `username=${username};`;
-      	}
-      	$('span#userName').text(getCookie("username"));
+          if(getCookie("username")==""){
+          var username = prompt("Please write a username");
+          if(username.length!==0)
+            document.cookie = `username=${username};`;
+        }
+        $('span#userName').text(getCookie("username"));
 
       });
 
@@ -94,6 +94,7 @@
         return "";
   }
     </script>
+    <script src="js/contact.js"></script>
     <script src="js/wp.js"></script>
   </body>
 </html>
