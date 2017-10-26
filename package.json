@@ -4,6 +4,7 @@
   "description": "Use the home person live chat app and save all history.",
   "dependencies": {
     "express": "^4.15.2",
+    "firebase": "^4.6.0",
     "socket.io": "^1.7.4"
   },
   "repository": {

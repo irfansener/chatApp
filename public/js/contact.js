@@ -1,6 +1,7 @@
 function contactList () {
 	$('.user-bar').text("Contact list");
 	$('.conversation').css("background","none");
+	$('.conversation-container').html(" ");
 	$('.conversation-container').append(newPeople("","İrfan ŞENER","12:04","deneme","1","irfan"));
 	$('.conversation-container').append(newPeople("","İrfan ŞENER","12:04","deneme","1","sener"));
 	$('.conversation-compose').hide();

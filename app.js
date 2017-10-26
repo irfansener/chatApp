@@ -6,13 +6,14 @@ var path = require('path')
 var express = require('express');
 var firebase = require("firebase");
 
+//Change your firebase informations
   var config = {
-    apiKey: "AIzaSyAGsznoH31EokWwtoLFbwFuf7wvdcZC3uI",
-    authDomain: "node-js-chat-5c7f4.firebaseapp.com",
-    databaseURL: "https://node-js-chat-5c7f4.firebaseio.com",
-    projectId: "node-js-chat-5c7f4",
+    apiKey: "YOUR-API-KEY",
+    authDomain: "YOUR-DOMAIN",
+    databaseURL: "YOUR-DATABASE",
+    projectId: "YOUR-ID",
     storageBucket: "",
-    messagingSenderId: "73732178839"
+    messagingSenderId: ""
   };
   firebase.initializeApp(config);
 
