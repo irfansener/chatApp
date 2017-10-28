@@ -7,6 +7,9 @@ function contactList () {
 	$('.conversation-compose').hide();
 
 }
+socket.on('users', data => {
+	$('.conversation-container').append(newPeople("",data.name,"12:04","deneme","1",data.name));
+});
 
 function newPeople(img,name,time,message,status,username) {
 	var head = '<div class="people" style="cursor:pointer;" onclick=getMessage("'+username+'")>'+
